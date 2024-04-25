@@ -18,7 +18,7 @@ public class LobbyItem : MonoBehaviour
         this.lobby = lobby;
 
         lobbyNameText.text = lobby.Name;
-        lobbyPlayersText.text = $"${lobby.Players.Count}/${lobby.MaxPlayers}";
+        lobbyPlayersText.text = $"{lobby.Players.Count}/{lobby.MaxPlayers}";
     }
 
     public void Join()
