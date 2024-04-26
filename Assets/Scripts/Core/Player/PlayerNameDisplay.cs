@@ -9,9 +9,9 @@ public class PlayerNameDisplay : MonoBehaviour
 
     private void Start()
     {
-        HandlePlayerNameChanged(string.Empty, player.playerName.Value);
+        HandlePlayerNameChanged(string.Empty, player.PlayerName.Value);
 
-        player.playerName.OnValueChanged += HandlePlayerNameChanged;
+        player.PlayerName.OnValueChanged += HandlePlayerNameChanged;
     }
 
     private void HandlePlayerNameChanged(FixedString32Bytes oldName, FixedString32Bytes newName)
@@ -21,6 +21,6 @@ public class PlayerNameDisplay : MonoBehaviour
 
     private void OnDestroy()
     {
-        player.playerName.OnValueChanged -= HandlePlayerNameChanged;
+        player.PlayerName.OnValueChanged -= HandlePlayerNameChanged;
     }
 }
