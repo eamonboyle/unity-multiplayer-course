@@ -1144,6 +1144,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665217819}
+  - component: {fileID: 665217820}
+  - component: {fileID: 665217821}
   m_Layer: 0
   m_Name: GameHud
   m_TagString: Untagged
@@ -1167,6 +1169,40 @@ Transform:
   - {fileID: 1905915721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &665217820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665217818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 1438029885
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &665217821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665217818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed207fe440b3e6428bcefeb444b2bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leaderboardEntityHolder: {fileID: 829289084}
+  leaderboardEntityPrefab: {fileID: 1852941383298839002, guid: 6852dd92a4306644287328d4b357bb0f, type: 3}
 --- !u!1001 &783407011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1308,7 +1344,6 @@ GameObject:
   - component: {fileID: 829289084}
   - component: {fileID: 829289086}
   - component: {fileID: 829289085}
-  - component: {fileID: 829289087}
   m_Layer: 0
   m_Name: LeaderboardEntityHolder
   m_TagString: Untagged
@@ -1375,18 +1410,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &829289087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829289083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce85533798bb39f4d8bdd8308c05903c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &846582323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,7 +1677,6 @@ GameObject:
   - component: {fileID: 1059263573}
   - component: {fileID: 1059263575}
   - component: {fileID: 1059263574}
-  - component: {fileID: 1059263576}
   m_Layer: 0
   m_Name: LeaderboardBackground
   m_TagString: Untagged
@@ -1720,18 +1742,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059263572}
   m_CullTransparentMesh: 1
---- !u!114 &1059263576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059263572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ed207fe440b3e6428bcefeb444b2bdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1123156012
 GameObject:
   m_ObjectHideFlags: 0
